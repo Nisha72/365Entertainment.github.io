@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+       background-color: black;
+    }
+    nav{
+       background:linear-gradient(to right, #b79c4d 35% , #decea0 70%);
+    }
+
+    .navbar-header button{
+      border-color: black;
+      
+    }
+    .navbar-brand{
+      color: black;
+      font-size: 26px;
+    }
+    .nav li a{
+      color: black;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .genre-category h3{
+  color: white;
+  padding: 10px 0;
+  border-bottom: 2px solid red;
+}
+  .nav li a:hover{
+    background-color:#9a8445;
+}
+#logo{
+    
+    border: 1px  #9a8445;
+    background:linear-gradient(to right, #9a8445  50% , #decea0 100%);
+    font-family: arial;
+    border-radius: 3px; 
+    font-size: 28px;
+    box-shadow: 0 3px #9a8445;
+
+}
+
+.row{
+  text-align:center;
+  color:white;
+}
+.row  img{
+  width:200px;
+  height: 220px;
+  border: 1px solid white;
+  margin:auto;
+
+}
+
+footer p{
+  background:linear-gradient(to right, #9a8445  50% , #decea0 100%);
+    font-family: arial;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    margin:0;
+}
+/*movies*/
+.search-bar{
+  width: 100%;
+  padding: 20px;
+}
+.dropdown{
+  width: 10%;
+  padding-left: 26px;
+}
+.search{
+width: 90%;
+}
+.dropbtn {
+  background-color: #ffc107;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    font-weight:bold;
+    border: 2px solid black;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #ffc107;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#myDropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;}
+
+.show {
+  display: block;
+}
+.movies img {
+width:180px;
+  height: 220px;
+}
+#ulist .col-sm-6,.col-md-4,.col-lg-2 p{
+  text-align: center;
+  color: white;
+  list-style-type: none;
+  margin:0;
+  padding:2px;
+}
+

@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>365</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <script>
+    function myFunction() {
+
+      var input, filter, ul, li, p, i;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("ulist");
+      li = ul.getElementsByTagName('li');
+
+      for (i = 0; i < li.length; i++) {
+        p = li[i].getElementsByTagName("p")[0];
+        if (p.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+</head>
+<body style="background-color:black;">
+<nav>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html" id="logo">365</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="Movies.html">Movies</a></li>
+        <li><a href="#">TV Series</a></li>
+         <li><a href="#">Audio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="Images/Banner 4.jpg" alt="Los Angeles" style="width:100%;height: 600px">
+      </div>
+
+      <div class="item">
+        <img src="Images/Banner 2.jpg" alt="Chicago" style="width:100%;height: 600px">
+      </div>
+    
+      <div class="item">
+        <img src="Images/Banner 3.jpg" alt="New york" style="width:100%;height: 600px">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+<div class="search-bar">
+    <div class="dropdown" >
+      <button onclick="myFunction()" class="dropbtn">Genre</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#section1">All</a>
+        <a href="#section1">Action</a>
+        <a href="#section2">Sci-Fi</a>
+        <a href="#section3">Drama</a>
+      </div>
+    </div>
+    <div class ="search" style="float: right;">
+      <input type="text" id="myInput" name="" onkeyup="myFunction()" placeholder="Search for movies" style="width: 100%;
+    padding: 10px;background-color: #ffc107;border: 2px solid black;text-align: center;">
+    </div>
+
+</div>
+<div class="container-fluid" >
+  <div class="movies">
+    <ul id="ulist">
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section1"><li><img src="Images/Freedom.jpg"><p>Freedom</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section1"><li><img src="Images/avengers.jpg"><p>Avengers</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section1"><li><img src="Images/Power.jpg"><p>Power</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section1"><li><img src="Images/seized.jpg"><p>Seized</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section1"><li><img src="Images/The_Lost_CIty_of_Z.png"><p>The lost city of z </p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section1"><li><img src="Images/BlackPanther.jpg"><p>Black Panther</p></li></div>
+
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section1"><li><img src="Images/Looper.jpg"><p>Looper</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section1"><li><img src="Images/Dark Sense.jpg"><p>Dark Sense</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section1"><li><img src="Images/Spenser.jpg"><p>Spenser</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section1"><li><img src="Images/Matrix.jpg"><p>Matrix</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section1"><li><img src="Images/The Vanished.jpg"><p>The Vanished</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section1"><li><img src="Images/Star Raiders.jpg"><p>Star Raiders</p></li></div>
+
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section2"><li><img src="Images/Titanic.jpg"><p>Titanic</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section2"><li><img src="Images/Maiden.jpg"><p>Maiden</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section2"><li><img src="Images/Nightingale.jpeg"><p>Nightingale</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section2"><li><img src="Images/Joker.jpg"><p>Joker</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section2"><li><img src="Images/Serena.jpeg"><p>Serena</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section2"><li><img src="Images/The Hole.jpg"><p>The Hole</p></li></div>
+
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section2"><li><img src="Images/tiger-zinda-hai.jpg"><p>Tiger Zinda Hai</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section2"><li><img src="Images/hero.jpg"><p>Hero</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section2"><li><img src="Images/raazi.jpg"><p>Raazi</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section2"><li><img src="Images/hindi-medium.jpg"><p>Hindi Medium</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section2"><li><img src="Images/raid.jpg"><p>Raid</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section2"><li><img src="Images/pk.jpg"><p>pk</p></li></div>
+
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section3"><li><img src="Images/Ant-Man.jpg"><p>Ant-Man</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section3"><li><img src="Images/iceman.jpg"><p>Iceman</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section3"><li><img src="Images/Avatar.jpg"><p>Avatar</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section3"><li><img src="Images/Money Heist.png"><p>Money Heist</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section3"><li><img src="Images/The Hill.jpg"><p>The Hill</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section3"><li><img src="Images/Ludo.jpg"><p>Ludo</p></li></div>
+
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section3"><li><img src="Images/Padmaavat.jpg"><p>Padmaavat</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section3"><li><img src="Images/The Big Bull.jpg"><p>The Big Bull</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section3"><li><img src="Images/Dil-Bechara.jpg"><p>Dil Bechara</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section3"><li><img src="Images/Raees.jpg"><p>Raees</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section3"><li><img src="Images/Sherni.jpg"><p>Sherni</p></li></div>
+  <div class="col-sm-6 col-md-3 col-lg-2" id="section3"><li><img src="Images/2 States.jpg"><p>2 States</p></li></div>
+
+  <ul>
+</div>
+
+
+  </div> 
+</div>
+ <footer><p>365 powered by Movies Entertainment Portal 2021. All Rights Reserved.</p></footer>
+</body>
+</html>
